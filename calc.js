@@ -14,20 +14,31 @@ reader.question("What would you like to calculate?", function(input){
     console.log('mathSymbol', mathSymbol);
     console.log('num1', num1);
     console.log('num2', num2)
-    if (mathSymbol === "+"){
+        if (mathSymbol === ""){
+        console.log("Math Symbol")};
+        if (mathSymbol === "+"){
         console.log(num1 + num2);
-  } if (mathSymbol === "-"){
-    console.log(num1 - num2);
-}
-if (mathSymbol === "/"){
-    console.log(num1 / num2);
-}
- if (mathSymbol === "*"){
+  }     if (mathSymbol === "-"){
+        console.log(num1 - num2);
+    }   if (mathSymbol === "/"){
+        console.log(num1 / num2);
+}       if (mathSymbol === "*"){
+        console.log(num1 * num2);
+}          
+
+
+if (mathSymbol === "Cu"){
+    console.log(num1 * num1),
+    console.log(num2 * num2);
+}          if (mathSymbol === "*"){
     console.log(num1 * num2);
-}
-if (mathSymbol === "Sq"){
-    console.log(Math.sqrt(num1), + "   "+ Math.sqrt(num2));
+}       
+
+
+
+        if (mathSymbol === "Sq"){
+        console.log(Math.sqrt(num1), + "   "+ Math.sqrt(num2));
 }
     reader.close()
 
-});
+})
